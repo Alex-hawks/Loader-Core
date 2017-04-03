@@ -1,0 +1,6 @@
+# Avoid checking in private Client IDs
+PrivateConstants.*
+
+.gradle
+build/ 
+.idea

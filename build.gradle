@@ -1,0 +1,9 @@
+task copyOutput(type: Copy) {
+	outputs.upToDateWhen { false }
+	into "${rootDir}\\build\\classes"
+	from "${projectDir}\\build\\classes"
+}
+build.dependsOn copyOutput
+rootProject.tasks.classes.dependsOn build
+
+apply plugin: 'scala'
