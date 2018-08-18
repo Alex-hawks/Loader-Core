@@ -7,3 +7,7 @@ build.dependsOn copyOutput
 rootProject.tasks.classes.dependsOn build
 
 apply plugin: 'scala'
+
+dependencies {
+    compile "org.reflections:reflections:0.9.9-RC1"
+}
